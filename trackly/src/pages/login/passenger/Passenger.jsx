@@ -1,5 +1,7 @@
 import './passenger.css'
 
+import { Link } from "react-router-dom";
+
 import Button from '../../../components/button/Button';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -39,16 +41,16 @@ export default function Passenger(){
                 </div>
                 <span>Forgot Password?</span>
                 <div className="submit-button">
-                    <Button
-                        name={'Login'}
-                        bg={'var(--fifth-color)'}
-                        bRad={'30px'}
-                        icon={<FontAwesomeIcon icon={faRightToBracket} />}
-                        color={'var(--first-color)'}
-                        bPad={'0.5rem 4rem'}
-
-
-                    />
+                    <Link to="/home">
+                        <Button
+                            name={'Login'}
+                            bg={'var(--fifth-color)'}
+                            bRad={'30px'}
+                            icon={<FontAwesomeIcon icon={faRightToBracket} />}
+                            color={'var(--first-color)'}
+                            bPad={'0.5rem 4rem'}
+                        />
+                    </Link>
                 </div>
             </form>
             <div className="horizontal-line"></div>

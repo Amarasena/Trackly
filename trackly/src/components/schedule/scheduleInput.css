@@ -1,4 +1,4 @@
-/* .schedule-container {
+.schedule-container {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -49,11 +49,11 @@
 .schedule-container .add-entry-button:hover,
 .schedule-container .submit-button:hover {
   background: rgba(255, 255, 255, 0.3);
-} */
+}
 
 
-/* ScheduleInput.css */
-.schedule-form {
+
+/* .schedule-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,12 +68,12 @@
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 80%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Add border to separate weekdays */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
 }
 
 .schedule-form .schedule-day h3 {
   margin-bottom: 0.5rem;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Line below the weekday name */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3); 
   padding-bottom: 0.5rem;
 }
 
@@ -137,4 +137,4 @@
 
 .schedule-form .remove-entry-button:hover{
   background-color: red;
-}
+} */

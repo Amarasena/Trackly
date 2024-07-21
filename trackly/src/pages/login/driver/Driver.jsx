@@ -1,8 +1,12 @@
 import './driver.css';
+
+
 import ScheduleInput from '../../../components/schedule/ScheduleInput';
 import Popup from '../../../components/popup/Popup';
 import Button from '../../../components/button/Button';
 import MapComponent from '../../../components/map/MapComponent';
+import DriverRouteSelect from '../../../components/map/driver-schedule-select-map/DriverRouteSelect';
+
 import { useState } from 'react';
 
 const Driver = () => {
@@ -28,7 +32,6 @@ const Driver = () => {
     };
 
     const handleMapClick = (e) => {
-        console.log("map clicked")
         if (!departure) {
           setDeparture({ lat: e.latLng.lat(), lng: e.latLng.lng() });
         } else if (!arrival) {
@@ -104,7 +107,7 @@ const Driver = () => {
             onClick={handleOpenPopup}
           />
             <Popup isOpen={isPopupOpen} onClose={handleClosePopup}>
-            {isMapVisible ? <MapComponent onClick={handleMapClick} departure={departure} arrival={arrival} /> : <ScheduleInput />}
+            {isMapVisible ? <DriverRouteSelect onClick={handleMapClick} departure={departure} arrival={arrival} /> : <ScheduleInput />}
             </Popup>
             <br />
             <button type="submit">Register</button>

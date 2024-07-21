@@ -1,17 +1,15 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 
-import { GoogleMapsProvider } from './contexts/location/GoogleMapsContext';
+import GoogleMapsLoader from './contexts/location/GoogleMapsLoader';
 
-const apiKey = 'AIzaSyAOEatSLRac4OG2bfIySYe6l8aV61Fm_rc'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <GoogleMapsProvider apiKey={apiKey}>
+  <StrictMode>
+    <GoogleMapsLoader>
       <App />
-    </GoogleMapsProvider>
-  </React.StrictMode>
+    </GoogleMapsLoader>
+  </StrictMode>
 );
-
