@@ -4,7 +4,7 @@ const Profile = () => {
 
     return(
         <ProfileStyled>
-            This is profile
+            This is profile. this is after
         </ProfileStyled>
     );
 }
