@@ -4,7 +4,7 @@ const Profile = () => {
 
     return(
         <ProfileStyled>
-            This is profile. this is after
+            This is profile. this is changed from github
         </ProfileStyled>
     );
 }
